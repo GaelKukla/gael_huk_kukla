@@ -150,18 +150,20 @@ a:hover::before {
   display: block;
   mix-blend-mode: difference;
   text-decoration: none;
-  color:#fff;
+  color:#000000;
   text-align: center;
 }
 
 .btn-17 .text {
   display: block;
   position: relative;
+  
 }
 
 .btn-17:hover .text {
   -webkit-animation: move-up-alternate 0.3s forwards;
   animation: move-up-alternate 0.3s forwards;
+  color: #000000;
 }
 
 
