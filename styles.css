@@ -1,0 +1,263 @@
+/* Estilos globais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0c0c0c;
+}
+
+/* Estilos do header inspirados no Valorant */
+header {
+    background-color: #0c0c0c; /* Fundo preto */
+    color: #ffffff; /* Texto branco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+/* Estilos do logotipo */
+.logo img {
+    width: 90px; /* Largura do logotipo */
+    height: auto;
+}
+
+/* Estilos da barra de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav li {
+    margin-left: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff; /* Texto branco */
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+    position: relative;
+    padding: 10px 20px; /* Adiciona preenchimento para criar a aparência de um botão */
+    border-radius: 5px; /* Borda arredondada */
+    margin-bottom: 5px; /* Espaçamento inferior */
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fa0000;
+    bottom: -10px;
+    left: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s;
+}
+
+a:hover {
+    color: #ffffff;
+    background: #5a0c0c34; /* Cor de fundo alterada ao passar o mouse */
+    border-color: #fa0000; /* Cor da borda alterada ao passar o mouse */
+}
+
+a:hover::before {
+    transform: scale(1, 1);
+}
+
+ /* --------------------------------------------------------*/
+.logo-escrita{
+    display: block;
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/*------------------------------------------------------------*/
+.btn-17,
+.btn-17 *,
+.btn-17 :after,
+.btn-17 :before,
+.btn-17:after,
+.btn-17:before {
+  border: 0 solid;
+  box-sizing: border-box;
+  justify-content:center;
+}
+
+.btn-17 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000000;
+  background-image: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#ffffff, #000000);
+  padding: 0;
+  text-transform: uppercase;
+  display: block;
+  max-width: 30%;
+  height: auto;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.btn-17:disabled {
+  cursor: default;
+}
+
+.btn-17:-moz-focusring {
+  outline: auto;
+}
+
+.btn-17 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-17 [hidden] {
+  display: none;
+}
+
+.btn-17 {
+  border-radius: 5px;
+  border-width: 2px;
+  padding: 0.8rem 3rem;
+  z-index: 0;
+    display: flex;
+}
+
+.btn-17,
+.btn-17 .text-container {
+  overflow: hidden;
+  position: relative;  
+}
+
+.btn-17 .text-container {
+  display: block;
+  mix-blend-mode: difference;
+  text-decoration: none;
+  color:#fff;
+  text-align: center;
+}
+
+.btn-17 .text {
+  display: block;
+  position: relative;
+}
+
+.btn-17:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+
+
+.btn-17:after,
+.btn-17:before {
+    --skew: 0.2;
+    background: #ffffff;
+    content: "";
+    display: block;
+    height: 102%;
+    left: calc(-50% - 50% * var(--skew));
+    pointer-events: none;
+    position: absolute;
+    top: -104%;
+    transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+    transition: transform 0.2s ease;
+    width: 100%;
+}
+
+.btn-17:after {
+    --progress: 0%;
+    left: calc(50% + 50% * var(--skew));
+    top: 102%;
+    z-index: -1;
+}
+
+.btn-17:hover:before {
+    --progress: 100%;
+}
+
+.btn-17:hover:after {
+    --progress: -102%;
+}
+
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-90%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+/*------------------------------------------------------------*/
+.principal{
+    display: block;
+    
+}
+
+
+
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Empilhar os elementos em telas menores */
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 60px; /* Largura do logotipo em telas menores */
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
