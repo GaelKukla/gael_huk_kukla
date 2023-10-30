@@ -12,7 +12,7 @@
     <div class="linha">
         <div class="container">
             <header>
-                <div class="logo">
+                <div class="logo-header">
                     <a href="./index.html"><img src="./image/logo.png" alt="Logo da empresa"></a>
                 </div>
                 <nav>
@@ -24,9 +24,10 @@
                 </nav>
             </header>
             <main class="principal">
-                <div style="background-image: url('./image/fundo-index.png'); background-size:cover; background-position: center; width: 100%; height: 50vh; box-shadow: inset 0px -90px 50px #0c0c0c;" class="oficial">
+                <div style="background-image: url('./image/fundo-index.png'); background-size:cover; background-attachment:fixed; background-position: center; width: 100%; height: 90vh; box-shadow: inset 0px -90px 50px #0c0c0c;"
+                    class="oficial ">
                     <img src="./image/logo-escrita.png" alt="Logo da empresa" class="logo-escrita">
-                    <button class="btn-17 text-container text">
+                    <button class="btn-17 text-container text" onclick="redirecionar()">
                         <p class="text">Site Oficial</p>
                     </button>
                 </div>
@@ -40,7 +41,7 @@
                             habilidade e trabalho em equipe, tornando-o um dos principais jogos de eSports.</p>
                     </div>
                     <div class="caracteristica">
-                        <div style="background-image: url('./image/jettGif.gif'); background-size:cover; background-position: center; width: 100%; height: 50vh; box-shadow: inset 0px 50px 40px #070707, inset 0px -90px 60px #0c0c0c; "
+                        <div style="background-image: url('./image/jettGif.gif'); background-size:cover; background-position: center; width: 100%; height: 90vh; box-shadow: inset 0px 50px 40px #070707, inset 0px -90px 60px #0c0c0c; "
                             class="jett-gif">
                             <h2 class="tituloAgente">Agentes</h2>
                             <div class="sAgentes">
@@ -50,25 +51,45 @@
                             </div>
                         </div>
 
+                        <h2 class="tTaticas">Táticas</h2>
                         <div class="agente">
-                            <div style="background-image: url('./image/sova.gif'); background-size:cover; background-position: center; width: 100%; height: 50vh; box-shadow: inset 20px 50px 40px #0c0c0c, inset 0px -90px 60px #0c0c0c;" class="sova"></div>
-                            <h2>Táticas</h2>
+                            <div style="background-image: url('./image/sova.gif'); background-size:cover; background-position: center; width: 100%; height: 50vh; box-shadow: inset 20px 50px 40px #0c0c0c, inset 0px -90px 60px #0c0c0c;"
+                                class="sova"></div>
                             <div class="sTaticas">
                                 <p id="texto">Valorant apresenta um elenco de agentes, cada um com habilidades especiais
                                     únicas. Os jogadores escolhem um agente antes de cada partida, e as habilidades
                                     desempenham um papel crucial na estratégia e tática do jogo.</p>
                             </div>
                         </div>
+                    </div>
+                </section>
+            </main>
         </div>
-                 </section>
-        </main>
-        <footer>
-
-        </footer>
-
     </div>
+    <footer>
 
-    </div>
+        <div class="base">
+            <div class="logo">
+                <a
+                    href="https://playvalorant.com/pt-br/?gad_source=1&gclid=CjwKCAjw-eKpBhAbEiwAqFL0miSC4k7e7bNFY9TmzMK_07kMha8ABmZjFz3zl1h159W7Krdb2ScDxRoCEHgQAvD_BwE&gclsrc=aw.ds"><img
+                        src="./image/logo-escrita.png" alt="Logo da empresa" class="logo-escrita-footer"></a>
+            </div>
+            <div class="linha-conteudo ">
+                <div>
+                    <ul class="lista-generica">
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="creditos">
+                &copy; 2023 Riot Games, Inc. Todos os direitos reservados.
+            </div>
+    </footer>
 </body>
+<script src="scriptIndex.js"></script>
 
 </html>
