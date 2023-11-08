@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Barrio;
+  src: url(../fonts/Barrio-Regular.ttf)
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -127,30 +132,31 @@ body {
   .base {
     width: 800px;
     margin: 0 auto;
+    margin-left: 10%;
   }
   
  
 .agents {
     list-style: none;
     display: block;
-    justify-content: space-around;
+    justify-content:flex-start;
     margin-top: 20px;
   }
   
-  .agents li {
+  .agents li { 
     cursor: pointer;
-    width: 150px;
-    height: 100px;
-    background-color: #333;
+    justify-content: space-between;
     color: #fff;
-    text-align: center;
-    font-size: 18px;
+    text-align:left;
+    font-size: 30px;
     border-radius: 5px;
-  
-    &.active {
-      background-color: #fff;
-      color: #333;
-    }
+    font-family: b
+  }
+
+  .agents li:hover {
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
   }
   
   .content {

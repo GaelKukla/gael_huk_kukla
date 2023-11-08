@@ -22,7 +22,7 @@ body {
     display: grid;
     grid-template-columns: 3fr 3fr 1fr;
     grid-template-rows:50px auto auto;
-    grid-template-areas: "header header header" "main sobre main" "footer footer footer";
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
   
     
   
@@ -247,6 +247,7 @@ footer {
   padding: 20px 0;
   text-align: center;
   align-items: center;
+  
   
 }
 
